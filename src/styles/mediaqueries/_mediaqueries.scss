@@ -1,0 +1,120 @@
+@media only screen and (max-width: 768px) {
+  .card-detail {
+    h2 {
+      font-size: large !important;
+    }
+    h4 {
+      font-size: medium !important;
+    }
+    p {
+      font-size: medium !important;
+    }
+    width: 70% !important;
+  }
+  label {
+    font-size: 20px !important ;
+  }
+  .contacto-container {
+    padding: 10px !important;
+  }
+  .header-container {
+    max-height: 72px !important;
+    .logo {
+      width: 120px !important;
+      height: 72px !important ;
+    }
+  }
+
+  .form-container {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 20%;
+  }
+  .carrito-info {
+    grid-template-columns: 2fr 1fr 1fr 1fr !important;
+    h2 {
+      font-size: 18px;
+    }
+  }
+  .carrito-espacio {
+    display: none;
+  }
+
+  .carrito-item {
+    grid-template-columns: 2fr 1fr 1fr 1fr !important;
+    .card-img {
+      display: none;
+    }
+    h3 {
+      font-size: 15px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container-fluid {
+    display: flex;
+    justify-content: space-evenly;
+    .navbar-collapse {
+      justify-content: space-between;
+      flex-grow: 0;
+    }
+    .nav-item {
+      margin: 20px;
+    }
+  }
+  .contacto-container .form-container {
+    input,
+    textarea {
+      width: 400px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .container-fluid {
+    position: relative;
+    // top: 70px;
+  }
+
+  #navbarNavDropdown {
+    width: 100%;
+    top: 20px;
+    margin-top: 10px;
+  }
+  .header-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 800;
+    .link {
+      font-size: 20px;
+      text-decoration: none;
+      color: rgb(195, 166, 95);
+    }
+  }
+  .navbar-nav {
+    border: 3px solid;
+    border-color: black;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .carrito-info {
+    h2 {
+      font-size: 12px !important;
+    }
+  }
+
+  .carrito-item {
+    h3 {
+      font-size: 12px !important;
+    }
+    p {
+      font-size: 9px !important;
+    }
+  }
+}

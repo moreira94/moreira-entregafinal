@@ -1,0 +1,36 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(37, 37, 37);
+  border-top: 3px solid;
+  border-color: black;
+  .footer-links {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    .footer-info,
+    .footer-enlaces {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 10px;
+      p,
+      a {
+        color: rgb(195, 166, 95);
+        margin-bottom: 0;
+        text-decoration: none;
+      }
+    }
+  }
+  .footer-copyright {
+    border-top: 1px solid;
+    border-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    p {
+      margin: 2px;
+    }
+  }
+}

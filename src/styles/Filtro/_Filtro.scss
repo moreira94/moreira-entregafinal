@@ -1,0 +1,42 @@
+.filtro-container {
+  background-color: gray;
+  .filtro-title {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+      color: rgb(195, 166, 95);
+      text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black,
+      0px -1px 0px black;    }
+  }
+  .filtro-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 10px;
+    li {
+      margin-top: 12px;
+      margin-bottom: 12px;
+      margin-right: 2px;
+      margin-left: 2px;
+      list-style: none;
+      .filtro-link {
+        display: flex;
+        text-decoration: none;
+        color: rgb(195, 166, 95);
+        border: 6px solid;
+        border-style: double;
+        border-color:rgb(195, 166, 95);
+        padding: 10px;
+        width: 90px;
+        background-color: black;
+        justify-content: center;
+      }
+      cursor: pointer;
+    }
+  }
+}

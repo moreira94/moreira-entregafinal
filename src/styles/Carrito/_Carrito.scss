@@ -1,0 +1,80 @@
+.carrito-body {
+  background-color: gray;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  .carrito-fin {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    .vaciar-button {
+      display: flex;
+      text-decoration: none;
+      color: rgb(195, 166, 95);
+      border: 6px solid;
+      border-style: double;
+      border-color:rgb(195, 166, 95);
+      padding: 10px;
+      width: 90px;
+      background-color: black;
+      justify-content: center;
+    }
+  }
+  h1 {
+    font-style: italic;
+    text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black,
+      0px -1px 0px black;
+  }
+  .carrito-info {
+    color: rgb(195, 166, 95);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-evenly;
+    background-color: black;
+    border-color: rgb(195, 166, 95) !important;
+    border: 6px solid;
+    border-style: double;
+    padding-top: 8px;
+    h2 {
+      font-size: 20px;
+    }
+  }
+
+  .carrito-item {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: space-evenly;
+    background-color: black;
+    border-color: rgb(195, 166, 95) !important;
+    border: 6px solid;
+    border-style: double;
+    margin: 10px;
+    img {
+      width: 100px;
+      height: 130px;
+    }
+    p {
+      color: rgb(195, 166, 95);
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+    }
+    h3 {
+      color: rgb(195, 166, 95);
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+    }
+  }
+}
+
+

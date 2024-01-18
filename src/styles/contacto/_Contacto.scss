@@ -1,0 +1,72 @@
+.contacto-container {
+  background-color: gray;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  h1 {
+    font-size: 40px;
+    margin-top: 10px;
+    color: rgb(195, 166, 95);
+    text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black,
+    0px -1px 0px black;
+  }
+  .form-container {
+    display: flex;
+    justify-content: center;
+    
+    div {
+      margin-top: 25px;
+    }
+    input,
+    textarea {
+      color: black;
+      border-color: black;
+      border: 3px solid;
+      // text-align: center;
+      margin-left: 10px;
+      padding-left: 10px;
+      // width: 400px;
+    }
+    label {
+      margin: 0;
+      font-size: 30px;
+      color: rgb(195, 166, 95);
+      text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black,
+      0px -1px 0px black;
+    }
+    .mensaje {
+      display: flex;
+    }
+    .mail-y-nombre, .mensaje-y-check {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+
+      .mail {
+        display: flex;
+      }
+      .nombre {
+        display: flex;
+      }
+    }
+    .input-mensaje {
+      height: 140px;
+    }
+    .check {
+        width: 20px;
+        height: 20px;
+        outline: 2px solid;
+    }
+    .botones {
+        display: flex;
+        gap: 80px;        
+        button {
+            text-decoration: none;
+            color: rgb(195, 166, 95);
+            border: double;
+            padding: 10px;
+            background-color: black;
+        }
+    }
+    
+  }
+}
