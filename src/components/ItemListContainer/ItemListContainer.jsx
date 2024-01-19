@@ -7,8 +7,7 @@ import { MoviesContext } from "../../context/MoviesContext"
 
 export const ItemListContainer = () => {
 
-    const movies = useContext(MoviesContext)
-    console.log(movies);
+    const movies = useContext(MoviesContext);
 
     const [FilteredMovies, setFilteredMovies] = useState([]);
     const decada = useParams().decada;
