@@ -9,7 +9,18 @@
     margin-top: 30px;
     margin-left: 100px;
     margin-right: 100px;
+    .finalizar-button {
+      display: flex;
+      color: rgb(195, 166, 95);
+      border: 6px solid;
+      border-style: double;
+      border-color:rgb(195, 166, 95);
+      background-color: black;
+      justify-content: center;
+      text-decoration: none;
+      padding: 10px;
 
+    }
     .vaciar-button {
       display: flex;
       text-decoration: none;

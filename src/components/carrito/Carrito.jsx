@@ -40,14 +40,14 @@ export const Carrito = () => {
 
                 ))
             }
-            {carrito.length > 0 ?
+            {/* {carrito.length > 0 ? */}
                 <div className='carrito-fin'>
                     <h1>Total: ${precioTotal()}  </h1>
                     <button className='vaciar-button' onClick={handleVaciar}>Vaciar</button>
-                    <Link to="/checkout">Finalizar compra</Link>
+                    <Link to="/checkout" className='finalizar-button'>Finalizar compra</Link>
                 </div> :
                 <h1>El carrito está vacío</h1>
-            }
+            {/* } */}
 
         </div>
     )

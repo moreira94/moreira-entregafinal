@@ -9,30 +9,23 @@ import { Nosotros } from "./components/nosotros/Nosotros.jsx"
 import { Index } from "./components/index/Index.jsx"
 import { Footer } from "./components/Footer/Footer.jsx"
 import { useState } from "react"
-import { CartContext } from "./context/CartContext.jsx"
+import CartProvider, { CartContext } from "./context/CartContext.jsx"
 import { Carrito } from "./components/carrito/Carrito.jsx"
 import { Checkout } from "./components/checkout/Checkout.jsx"
+import MoviesProvider from "./context/MoviesContext.jsx"
 
 function App() {
 
 
 
-  const [carrito, setCarrito] = useState([])
-  const cantidadEnCarrito = () => {
-    return carrito.reduce((acc,prod) => acc + prod.cantidad, 0)  
-}
-  const precioTotal = () => {
-    return carrito.reduce((acc, prod) => acc + prod.price * prod.cantidad, 0)
-  }
-
-  const vaciarCarrito = () => {
-    setCarrito([]);
-  }
+ 
 
 
   return (
     <div>
-      <CartContext.Provider value={{carrito, setCarrito, cantidadEnCarrito, precioTotal, vaciarCarrito}}>
+      <MoviesProvider>
+
+      <CartProvider>
         <BrowserRouter>
 
           <NavBar />
@@ -53,7 +46,8 @@ function App() {
 
           <Footer />
         </BrowserRouter>
-      </CartContext.Provider>
+      </CartProvider>
+      </MoviesProvider>
     </div>
   )
 }

@@ -1,0 +1,30 @@
+.checkout-body {
+  min-height: 800px;
+  background-color: gray;
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+    input {
+      width: 25%;
+      color: black;
+      border-color: black;
+      border: 3px solid;
+      margin-left: 10px;
+      padding-left: 10px;
+    }
+
+    button {
+      display: flex;
+      padding-bottom: 5px;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      width: 120px;
+      color: rgb(195, 166, 95);
+      border: double;
+    }
+  }
+}
