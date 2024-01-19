@@ -37,6 +37,7 @@ export const Carrito = () => {
 
             </div>
             </div> : <div></div>}
+            
             { isNaN(carrito) ? 
                 carrito.map((prod, index) => (
                     <div className="carrito-item" key={prod.id}>
