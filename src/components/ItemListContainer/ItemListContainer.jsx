@@ -3,8 +3,6 @@ import ItemList from "../ItemList/ItemList"
 import { getProducts } from "../../funciones"
 import { Filtro } from "../filtro/Filtro"
 import { useParams } from "react-router-dom"
-import { collection, getDocs, query, where } from "firebase/firestore"
-import { database } from "../../firebase/config"
 import { MoviesContext } from "../../context/MoviesContext"
 
 export const ItemListContainer = () => {
@@ -23,24 +21,6 @@ export const ItemListContainer = () => {
             setFilteredMovies(movies.movies)
         }
     }, [movies, decada])
-
-    // useEffect(() => {
-
-    //     const productosRef = collection(database, "productos");
-
-    //     const q = decada ? query(productosRef, where("decada", "==", decada)) : productosRef; 
-
-    //     getDocs(q)
-    //         .then((resp) => {
-                
-    //             setMovies(
-    //                 resp.docs.map((doc) => {
-    //                     return {...doc.data(), id: doc.id}
-    //                 })
-    //             )
-
-    //         })
-    // }, [decada])
 
     useEffect( () => {
         setFilteredMovies(movies.movies)

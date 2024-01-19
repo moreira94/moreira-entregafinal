@@ -69,6 +69,16 @@
     border: 6px solid;
     border-style: double;
     margin: 10px;
+    .trash-icon {
+      display: flex;
+      color: rgb(195, 166, 95);
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      background-color: black;
+      border: none;
+
+    }
     img {
       width: 100px;
       height: 130px;
