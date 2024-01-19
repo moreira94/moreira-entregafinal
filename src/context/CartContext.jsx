@@ -3,7 +3,7 @@ import { createContext } from "react";
 
 export const CartContext = createContext();
 
-const carritoInicial = JSON.parse(localStorage.getItem("carrito") || []);
+const carritoInicial = JSON.parse(localStorage.getItem("carrito")) || [];
 
 
 const CartProvider = ({children}) => {

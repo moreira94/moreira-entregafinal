@@ -33,7 +33,6 @@ export const ItemCount = ({total, inicial, item}) => {
             nuevoCarrito.push(itemAgregado);
         }
         setCarrito(nuevoCarrito)
-        console.log(nuevoCarrito)
     }
 
 
