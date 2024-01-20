@@ -48,7 +48,7 @@ if (pedidoId) {
       <h1 className="main-title">Finalizar compra</h1>
       <form className="formulario" onSubmit={handleSubmit(comprar)}>
 
-        <input type="text" placeholder="Ingresá tu Nombre" {...register("nombre")} />
+        <input type="text" placeholder="Ingresá tu Nombre y Apellido" {...register("nombre")} />
         <input type="email" placeholder="Ingresá tu Mail" {...register("email")} />
         <input type="phone" placeholder="Ingresá tu Teléfono" {...register("telefono")} />
 
